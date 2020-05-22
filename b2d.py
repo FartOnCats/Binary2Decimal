@@ -72,6 +72,3 @@ if "-l" in sys.argv:
     print(output)
 else:
     print auto(sys.argv[-1])
-
-
-
