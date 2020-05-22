@@ -8,12 +8,12 @@ def printusage():
     usage += "  -b ; convert binary to decimal\n"
     usage += "  -d ; convert decimal to binary\n"
     usage += "  -l ; convert multiple values seperated by commas\n"
+    usage += "  -8 ; outputs binary with leading zeros\n"
     usage += "Example: ./b2d -b 0010 -> returns 2\n"
     usage += "Example: ./b2d -d 24 -> returns 11000\n"
     usage += "Example: ./b2d.py -b -l 11110000,00111011  -> returns [240, 59]\n"
     usage += "Note: binary assumes the bit to the left is the lowest\n"
     usage += "  decimal will return highest bit to the right\n"
-
 
     print usage
 def binary2decimal(binaryString):
@@ -43,7 +43,9 @@ def decimal2binary(decimalString):
            
         
         highestPower -=1
-
+    if "-8" in sys.argv:
+        while len(binaryString) < 8:
+            binaryString = "0" + binaryString
     return binaryString
 def listModeLogic(stringData):
     strings = stringData.split(',')
