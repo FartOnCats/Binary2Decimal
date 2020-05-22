@@ -7,7 +7,7 @@ def printusage():
     usage += "Options: \n"
     usage += "  -b ; convert binary to decimal\n"
     usage += "  -d ; convert decimal to binary\n"
-    usage += "  -l ; convert multiple values seperated by commas"
+    usage += "  -l ; convert multiple values seperated by commas\n"
     usage += "Example: ./b2d -b 0010 -> returns 2\n"
     usage += "Example: ./b2d -d 24 -> returns 11000\n"
     usage += "Example: ./b2d.py -b -l 11110000,00111011  -> returns [240, 59]\n"
