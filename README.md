@@ -6,6 +6,7 @@ Usage: ./b2d.py [option] [string] <br>
 Options:<br>
   -b ; convert binary to decimal<br>
   -d ; convert decimal to binary<br>
+  -l ; convert multiple values seperated by commas<br>
 Example: ./b2d -b 0010 -> returns 2<br>
 Example: ./b2d -d 24 -> returns 11000<br>
 Note: binary assumes the bit to the right is the lowest<br>
